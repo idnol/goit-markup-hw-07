@@ -490,7 +490,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 408px;
+    width: 300px;
     min-height: 584px;
     background: #fcfcfc;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.14), 0 1px 3px rgba(0, 0, 0, 0.12), 0 2px 1px rgba(0, 0, 0, 0.2);
@@ -618,7 +618,6 @@
     position: relative;
 }
 .modal-form__icon.check {
-    /*background-color: var(--color-dark-blue);*/
     border: none;
     fill: var(--color-white);
     transform: translate(-50%, -50%);
@@ -643,6 +642,7 @@
     border-radius: 4px;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 0 auto;
 }
 .modal-form__checkbox:checked + .modal-form__label.two .modal-form__label-inner {
     background-color: var(--color-dark-blue);
@@ -695,7 +695,7 @@
 .mobile-tel .mobile-contact__link {
     color: #4d5ae5;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 24px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;

@@ -73,7 +73,14 @@
     .header-menu, .header-address {
         display: flex;
     }
-    .header-menu__icon {
+    .header-menu__icon-wrapper {
         display: none;
+    }
+    .header-contact {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .modal {
+        width: 408px;
     }
 }

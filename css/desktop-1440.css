@@ -60,4 +60,8 @@
     .footer-form, .footer-inner {
         width: unset;
     }
+    .header-contact {
+        flex-direction: row;
+        gap: 40px;
+    }
 }
