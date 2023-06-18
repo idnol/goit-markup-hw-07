@@ -9,37 +9,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/globals.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile-428.css">
+    <link rel="stylesheet" href="./css/tablet-768.css">
+    <link rel="stylesheet" href="./css/desktop-1440.css">
 </head>
 <body>
-<header class="header">
-    <div class="container">
-        <nav class="nav">
-            <a href="./index.html" class="logo link header-logo">Web<span class="logo-black">Studio</span></a>
-            <ul class="header-menu list">
-                <li class="header-menu__item">
-                    <a href="./index.html" class="header-menu__link active link">Studio</a>
-                </li>
-                <li class="header-menu__item">
-                    <a href="./portfolio.html" class="header-menu__link link">Portfolio</a>
-                </li>
-                <li class="header-menu__item">
-                    <a href="" class="header-menu__link link">Contacts</a>
-                </li>
-            </ul>
-        </nav>
-        <address class="header-address">
-            <ul class="header-contact list">
-                <li class="header-contact__item">
-                    <a href="mailto:info@devstudio.com" class="header-contact__link link">info@devstudio.com</a>
-                </li>
-                <li class="header-contact__item">
-                    <a href="tel:+110001111111" class="header-contact__link link">+11 (000) 111-11-11</a>
-                </li>
-            </ul>
-        </address>
-    </div>
-</header>
+<!--<header class="header">-->
+<!--    <div class="container">-->
+<!--        <nav class="nav">-->
+<!--            <a href="./index.html" class="logo link header-logo">Web<span class="logo-black">Studio</span></a>-->
+<!--            <ul class="header-menu list">-->
+<!--                <li class="header-menu__item">-->
+<!--                    <a href="./index.html" class="header-menu__link active link">Studio</a>-->
+<!--                </li>-->
+<!--                <li class="header-menu__item">-->
+<!--                    <a href="./portfolio.html" class="header-menu__link link">Portfolio</a>-->
+<!--                </li>-->
+<!--                <li class="header-menu__item">-->
+<!--                    <a href="" class="header-menu__link link">Contacts</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </nav>-->
+<!--        <address class="header-address">-->
+<!--            <ul class="header-contact list">-->
+<!--                <li class="header-contact__item">-->
+<!--                    <a href="mailto:info@devstudio.com" class="header-contact__link link">info@devstudio.com</a>-->
+<!--                </li>-->
+<!--                <li class="header-contact__item">-->
+<!--                    <a href="tel:+110001111111" class="header-contact__link link">+11 (000) 111-11-11</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </address>-->
+<!--    </div>-->
+<!--</header>-->
     <main>
         <section class="section hero">
             <div class="container">
@@ -107,7 +111,7 @@
             </div>
         </section>
         <section class="section team">
-            <div class="container">
+            <div class="container container-second">
                 <h2 class="team-title section-title">Our Team</h2>
                 <ul class="team-list list">
                     <li class="team-list__item">
@@ -262,7 +266,7 @@
             </div>
         </section>
         <section class="section customers">
-            <div class="container">
+            <div class="container customers-container">
                 <h2 class="customers-title section-title">Customers</h2>
                 <ul class="customers-list list">
                     <li class="customers-list__item-wrapper">
@@ -366,70 +370,71 @@
             </div>
         </div>
     </footer>
-    <div class="modal-wrapper is-hidden" data-modal>
-        <div class="modal">
-            <button type="button" class="modal-close" data-modal-close>
-                <svg class="modal-close__icon" width="8" height="8">
-                    <use href="./images/icon-set.svg#icon-close"></use>
-                </svg>
-            </button>
-            <p class="modal-title">Leave your contacts and we will call you back</p>
-            <form class="modal-form">
-                <div class="modal-form__inner">
-                    <label for="user-name" class="modal-form__label">
-                        Name
-                    </label>
-                    <div class="modal-form__input-wrapper">
-                        <input class="modal-form__input" type="text" name="user-name" id="user-name">
-                        <svg class="modal-form__icon" width="18" height="24">
-                            <use href="./images/icons-pack.svg#icon-person"></use>
-                        </svg>
-                    </div>
-                </div>
-                <div class="modal-form__inner">
-                    <label for="user-phone" class="modal-form__label">
-                        Phone
-                    </label>
-                    <div class="modal-form__input-wrapper">
-                        <input class="modal-form__input" type="tel" name="user-phone" id="user-phone">
-                        <svg class="modal-form__icon" width="18" height="24">
-                            <use href="./images/icons-pack.svg#icon-phone"></use>
-                        </svg>
-                    </div>
-                </div>
-                <div class="modal-form__inner">
-                    <label for="user-email" class="modal-form__label">
-                        Email
-                    </label>
-                    <div class="modal-form__input-wrapper">
-                        <input class="modal-form__input" type="email" name="user-email" id="user-email">
-                        <svg class="modal-form__icon" width="18" height="24">
-                            <use href="./images/icons-pack.svg#icon-email"></use>
-                        </svg>
-                    </div>
-                </div>
-                <div class="modal-form__inner two">
-                    <label for="user-comment" class="modal-form__label">
-                        Comment
-                    </label>
-                    <textarea name="user-comment" id="user-comment" placeholder="Text input" class="modal-form__textarea"></textarea>
-                </div>
-                <div class="modal-form__inner three">
-                    <input type="checkbox" id="user-privacy" value="true" name="user-privacy" class="modal-form__checkbox visually-hidden">
-                    <label for="user-privacy" class="modal-form__label two">
-                        <span class="modal-form__label-inner">
-                            <svg class="modal-form__icon check" width="10" height="8">
-                                <use href="./images/icons-pack.svg#icon-check"></use>
-                            </svg>
-                        </span>
-                        I accept the terms and conditions of the
-                        <a href="#" class="modal-form__link">Privacy Policy</a>
-                    </label>
-                </div>
-                <button type="submit" class="modal-form__submit">Send</button>
-            </form>
-        </div>
-    </div>
+<!--    <div class="modal-wrapper is-hidden" data-modal>-->
+<!--        <div class="modal">-->
+<!--            <button type="button" class="modal-close" data-modal-close>-->
+<!--                <svg class="modal-close__icon" width="8" height="8">-->
+<!--                    <use href="./images/icon-set.svg#icon-close"></use>-->
+<!--                </svg>-->
+<!--            </button>-->
+<!--            <p class="modal-title">Leave your contacts and we will call you back</p>-->
+<!--            <form class="modal-form">-->
+<!--                <div class="modal-form__inner">-->
+<!--                    <label for="user-name" class="modal-form__label">-->
+<!--                        Name-->
+<!--                    </label>-->
+<!--                    <div class="modal-form__input-wrapper">-->
+<!--                        <input class="modal-form__input" type="text" name="user-name" id="user-name">-->
+<!--                        <svg class="modal-form__icon" width="18" height="24">-->
+<!--                            <use href="./images/icons-pack.svg#icon-person"></use>-->
+<!--                        </svg>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="modal-form__inner">-->
+<!--                    <label for="user-phone" class="modal-form__label">-->
+<!--                        Phone-->
+<!--                    </label>-->
+<!--                    <div class="modal-form__input-wrapper">-->
+<!--                        <input class="modal-form__input" type="tel" name="user-phone" id="user-phone">-->
+<!--                        <svg class="modal-form__icon" width="18" height="24">-->
+<!--                            <use href="./images/icons-pack.svg#icon-phone"></use>-->
+<!--                        </svg>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="modal-form__inner">-->
+<!--                    <label for="user-email" class="modal-form__label">-->
+<!--                        Email-->
+<!--                    </label>-->
+<!--                    <div class="modal-form__input-wrapper">-->
+<!--                        <input class="modal-form__input" type="email" name="user-email" id="user-email">-->
+<!--                        <svg class="modal-form__icon" width="18" height="24">-->
+<!--                            <use href="./images/icons-pack.svg#icon-email"></use>-->
+<!--                        </svg>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="modal-form__inner two">-->
+<!--                    <label for="user-comment" class="modal-form__label">-->
+<!--                        Comment-->
+<!--                    </label>-->
+<!--                    <textarea name="user-comment" id="user-comment" placeholder="Text input" class="modal-form__textarea"></textarea>-->
+<!--                </div>-->
+<!--                <div class="modal-form__inner three">-->
+<!--                    <input type="checkbox" id="user-privacy" value="true" name="user-privacy" class="modal-form__checkbox visually-hidden">-->
+<!--                    <label for="user-privacy" class="modal-form__label two">-->
+<!--                        <span class="modal-form__label-inner">-->
+<!--                            <svg class="modal-form__icon check" width="10" height="8">-->
+<!--                                <use href="./images/icons-pack.svg#icon-check"></use>-->
+<!--                            </svg>-->
+<!--                        </span>-->
+<!--                        I accept the terms and conditions of the-->
+<!--                        <a href="#" class="modal-form__link">Privacy Policy</a>-->
+<!--                    </label>-->
+<!--                </div>-->
+<!--                <button type="submit" class="modal-form__submit">Send</button>-->
+<!--            </form>-->
+<!--        </div>-->
+<!--    </div>-->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

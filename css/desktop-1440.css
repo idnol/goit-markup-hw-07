@@ -1,0 +1,51 @@
+@media screen and (min-width: 1158px) {
+    .container, .customers-container {
+        padding: 0 15px;
+        width: 1158px;
+        max-width: unset;
+    }
+    .hero {
+        padding: 188px 0;
+    }
+    .hero-title {
+        margin: 0 auto 48px auto;
+    }
+    .benefits {
+        padding: 120px 0;
+    }
+    .benefits-list {
+        gap: 24px;
+    }
+    .benefits-list-item {
+        width: calc((100% - 72px) / 4);
+    }
+    .benefits-list-item-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    .benefits-item-image {
+        display: block;
+    }
+    .services {
+        display: block;
+    }
+    .team {
+        padding: 120px 0;
+    }
+    .team-list {
+        gap: 24px;
+    }
+    .team-list__item {
+        width: calc((100% - 72px) / 4);
+    }
+    .customers {
+        padding: 120px 0;
+    }
+    .customers-list {
+        gap: 24px;
+    }
+    .customers-list__item-wrapper {
+        width: calc((100% - 120px) / 6);
+    }
+}

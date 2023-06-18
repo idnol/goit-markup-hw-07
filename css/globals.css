@@ -1,0 +1,90 @@
+:root {
+    --text-color-black: #2e2f42;
+    --text-color-blue: #4d5ae5;
+    --text-color-grey: #434455;
+    --color-white: #F4F4FD;
+    --color-light-blue: #e7e9fc;
+    --color-grey: #8e8f99;
+    --color-dark-blue: #404bbf;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #FFFFFF;
+}
+ul {
+    padding-left: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul
+{
+    margin: 0;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.link {
+    text-decoration: none;
+    display: inline-block;
+}
+.list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--text-color-black);
+}
+.list-text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color-grey);
+}
+.section-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--text-color-black);
+}
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+img {
+    display: block;
+}
+
+.container, .customers-container {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 428px;
+    padding: 0 16px;
+}
+.container-second {
+    width: 296px;
+}
