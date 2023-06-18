@@ -1,5 +1,5 @@
 @media screen and (min-width: 1158px) {
-    .container, .customers-container {
+    .container, .customers-container, .footer-container {
         padding: 0 15px;
         width: 1158px;
         max-width: unset;
@@ -47,5 +47,17 @@
     }
     .customers-list__item-wrapper {
         width: calc((100% - 120px) / 6);
+    }
+    .footer {
+        padding: 100px 0;
+    }
+    .footer-info {
+        margin-right: 120px;
+    }
+    .footer-social {
+        margin-right: 80px;
+    }
+    .footer-form, .footer-inner {
+        width: unset;
     }
 }
