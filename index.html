@@ -42,9 +42,9 @@
                 </li>
             </ul>
         </address>
-        <button class="header-menu__icon-wrapper js-open-menu">
+        <button class="header-menu__icon-wrapper js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
             <svg class="header-menu__icon" width="32" height="22">
-                <use href="./images/icons.svg#icon-hamburger"></use>
+                <use href="./images/icon-menu.svg#icon-hamburger"></use>
             </svg>
         </button>
     </div>
@@ -441,8 +441,8 @@
 <!--            </form>-->
 <!--        </div>-->
 <!--    </div>-->
-    <div class="mobile-menu-wrapper js-menu-container">
-        <button type="button" class="modal-close js-close-menu" aria-expanded="false" aria-controls="mobile-menu">
+    <div class="mobile-menu-wrapper js-menu-container" id="mobile-menu">
+        <button type="button" class="modal-close js-close-menu">
             <svg class="modal-close__icon" width="8" height="8">
                 <use href="./images/icon-set.svg#icon-close"></use>
             </svg>

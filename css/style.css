@@ -656,4 +656,9 @@
     top: 0;
     left: 0;
     background: rebeccapurple;
+    transform: translateX(100%);
+    transition: transform 350ms ease-in;
+}
+.mobile-menu-wrapper.active {
+    transform: translateX(0);
 }
