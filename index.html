@@ -43,8 +43,8 @@
             </ul>
         </address>
         <button class="header-menu__icon-wrapper js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-            <svg class="header-menu__icon" width="32" height="22">
-                <use href="./images/symbol-defs-5.svg#icon-burger"></use>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="22" fill="none">
+                <path stroke="#2E2F42" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M1.348 20.043h29.538M1.348 10.735h29.538M1.348 1.428h29.538"/>
             </svg>
         </button>
     </div>
@@ -442,12 +442,66 @@
 <!--        </div>-->
 <!--    </div>-->
     <div class="mobile-menu-wrapper js-menu-container" id="mobile-menu">
-        <button type="button" class="modal-close js-close-menu">
+        <button type="button" class="modal-close mobile-menu__close js-close-menu">
             <svg class="modal-close__icon" width="8" height="8">
                 <use href="./images/icon-set.svg#icon-close"></use>
             </svg>
         </button>
-
+        <div class="mobile-menu-inner">
+            <nav class="nav">
+                <ul class="mobile-menu list">
+                    <li class="mobile-menu__item">
+                        <a href="./index.html" class="mobile-menu__link active link">Studio</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="./portfolio.html" class="mobile-menu__link link">Portfolio</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-menu__contacts">
+                <address class="mobile-address">
+                    <div class="mobile-contact mobile-tel">
+                        <a href="tel:+110001111111" class="mobile-contact__link link">+11 (000) 111-11-11</a>
+                    </div>
+                    <div class="mobile-contact mobile-email">
+                        <a href="mailto:info@devstudio.com" class="mobile-contact__link link">info@devstudio.com</a>
+                    </div>
+                    <ul class="mobile-list__icons list">
+                        <li class="team-list__icons-item">
+                            <a href="#" class="team-list__icon-wrapper" rel="noopener noreferrer">
+                                <svg class="team-list__icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-list__icons-item">
+                            <a href="#" class="team-list__icon-wrapper" rel="noopener noreferrer">
+                                <svg class="team-list__icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-list__icons-item">
+                            <a href="#" class="team-list__icon-wrapper" rel="noopener noreferrer">
+                                <svg class="team-list__icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-list__icons-item">
+                            <a href="#" class="team-list__icon-wrapper" rel="noopener noreferrer">
+                                <svg class="team-list__icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+        </div>
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
