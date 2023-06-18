@@ -219,7 +219,7 @@
     fill: #ffffff;
 }
 .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/banner-bg.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-1x-428-min.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -227,6 +227,14 @@
     max-width: 1440px;
     width: 100%;
     margin: auto;
+}
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-2x-428-min.jpg);;
+    }
 }
 .hero-title {
     font-size: 36px;
