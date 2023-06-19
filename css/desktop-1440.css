@@ -25,7 +25,7 @@
         line-height: 1.2;
     }
     .benefits-item-image {
-        display: block;
+        display: flex;
     }
     .services {
         display: block;
@@ -51,6 +51,9 @@
     .footer {
         padding: 100px 0;
     }
+    .footer-inner {
+        margin-bottom: 0;
+    }
     .footer-info {
         margin-right: 120px;
     }
@@ -64,15 +67,5 @@
         flex-direction: row;
         gap: 40px;
     }
-    .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-1x-1158-min.jpg);
-    }
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .hero {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-2x-1158-min.jpg);;
-        }
-    }
+
 }
